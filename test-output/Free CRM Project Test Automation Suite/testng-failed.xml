@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Project Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="com.crm.qa.test.HomePageTest">
+        <methods>
+          <include name="homepageUsernameTest"/>
+          <include name="taskTest"/>
+          <include name="dealsTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.test.HomePageTest -->
+      <class name="com.crm.qa.test.ContactsPageTest">
+        <methods>
+          <include name="verifyContactsPageLableTest"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="selectSingleContactsTest"/>
+          <include name="validateCreateNewContact"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.test.ContactsPageTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Free CRM Project Test Automation Suite] -->
